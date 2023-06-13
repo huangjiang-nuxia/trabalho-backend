@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>File upload</title>
+		<link href="style.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<form class="form_allgemein" action="fileupload.php" method="post" enctype="multipart/form-data">
+			<label for="">File name</label>
+			<input type="text" name="filename" required><br />
+			<label for="">File</label>
+			<input type="file" name="file" required><br />
+			<label for="">Description:</label><br />
+			<textarea name="filedesc" cols="30" rows="10"></textarea><br />
+			<input type="submit" value="upload">
+		</form>
+		
+		<form class="form_allgemein" action="fileupload_2.php" method="post" enctype="multipart/form-data">
+			<label for="">E-book name</label>
+			<input type="text" name="title" required><br />
+			<label for="">File</label>
+			<input type="file" name="file2" required><br />
+			<input type="submit" value="upload">
+		</form>
+		
+		<form class="form_allgemein" action="fileupload_3.php" method="post" enctype="multipart/form-data">
+			<label for="">Name</label>
+			<input type="text" name="name" required><br />
+			<label for="">Picture</label>
+			<input type="file" name="file3" required><br />
+			<label for="">Additional info:</label><br />
+			<textarea name="info" cols="20" rows="5"></textarea><br />
+			<input type="submit" value="upload">
+		</form>
+		
+		
+	</body>
+</html>
